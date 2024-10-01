@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Visualizar Categoria</h2>
+<p><strong>ID:</strong> {{ categoria.id }}</p>
+<p><strong>Nome:</strong> {{ categoria.nome }}</p>
+<p><strong>Descrição:</strong> {{ categoria.descricao }}</p>
+<a href="{{ url_for('edit_cat', id=categoria.id) }}">Editar</a>
+<a href="{{ url_for('index') }}">Voltar</a>
+{% endblock %}
